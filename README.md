@@ -2,6 +2,11 @@
 
 A plugin that helps you create an accordian style wizard form.
 
+[Usage](#usage)
+[Event hooks](#event-hooks)
+[External methods](#external-methods)
+[Demo](#demo)
+
 ##### Why a wizard?
 
 Wizard forms help break down long forms to smaller chunks containing relatable questions. Autoscrolling enhances usability by scrolling the next step into view. Animation allows users to visually track where they went and where from.
