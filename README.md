@@ -1,6 +1,6 @@
-# jQuery Accordion Wizard
+# Accordion Wizard
 
-A plugin that helps you create an accordian style wizard form.
+A jQuery plugin that helps you create an accordian style wizard form.
 
 [Usage](#usage) \
 [Event hooks](#event-hooks) \
@@ -104,6 +104,9 @@ Choose whether the plugins also creates the submit button.
 
 **autoButtonsSubmitText** - (string, default "Submit") \
 The text for the auto generated submit button.
+
+**autoButtonsEditSubmitText** - (string, default "Save") \
+The text for the auto generated submit button when in 'edit' mode.
 
 **stepNumbers** - (bool, default true) \
 If true the plugin will create the step numbers for you. You will need to add the ```data-acc-title``` attribute to each title element.

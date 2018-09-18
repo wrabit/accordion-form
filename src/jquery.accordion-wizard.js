@@ -12,12 +12,12 @@
 			enableScrolling: true,
 			scrollPadding: 5,
 
-
 			autoButtons: true,
 			autoButtonsNextClass: null,
 			autoButtonsPrevClass: null,
 			autoButtonsShowSubmit: true,
 			autoButtonsSubmitText: 'Submit',
+			autoButtonsEditSubmitText: 'Save',
 
 			stepNumbers: true,
 			stepNumberClass: '',
@@ -69,7 +69,10 @@
 					if( i < ( mthis.$steps.length - 1 ) ) {
 						$content.append('<a href="#" class="'+mthis.settings.autoButtonsNextClass+'" data-acc-btn-next>Next</a>');
 					} else if( mthis.settings.autoButtonsShowSubmit ) {
-						$content.append('<input type="submit" class="'+mthis.settings.autoButtonsNextClass+'" value="'+mthis.settings.autoButtonsSubmitText+'">');
+
+						var btnText = this.settings.mode == 'wizard' ? mthis.settings.autoButtonsSubmitText : mthis.settings.autoButtonsEditSubmitText;
+
+						$content.append('<input type="submit" class="' + mthis.settings.autoButtonsNextClass + '" value="' + btnText + '">');
 					}
 
 				})

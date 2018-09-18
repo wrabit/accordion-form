@@ -42,7 +42,7 @@ gulp.task('sass', function() {
 // Starts watcher. Watcher runs gulp sass task on changes
 gulp.task( 'watch', function() {
     //gulp.watch( paths.sass + '/**/*.scss', ['styles'] );
-    gulp.watch( [paths.src], ['js'] );
+    gulp.watch( [paths.src + '/*.js'], ['js'] );
 });
 
 // gulp.task( 'minifycss', function() {
