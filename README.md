@@ -2,7 +2,13 @@
 
 A plugin that helps you create an accordian style wizard form.
 
-Can be used as a wizard form or an edit form (all sections will be expanded).
+##### Why a wizard?
+
+Wizard forms help break down long forms to smaller chunks containing relatable questions. Autoscrolling enhances usability by scrolling the next step into view. Animation allows users to visually track where they went and where from.
+
+##### When are wizards no good?
+
+Wizards tend to be less user friendly when updating existing data, for example when using as a CRUD form. This is because users have to first navigate through steps to find their field, edit and go through all steps to save again. For this reason I included an 'edit' mode which will load the form with all steps expanded.
 
 ## Usage
 
