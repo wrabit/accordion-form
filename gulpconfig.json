@@ -1,0 +1,14 @@
+{
+  "browserSyncOptions" : {
+
+    "notify": false
+  },
+  "browserSyncWatchFiles" : [
+    "./dist/*.js"
+  ],
+  "paths" : {
+    "node": "./node_modules/",
+    "src": "./src",
+    "dist": "./dist"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "accordion-wizard",
+  "version": "0.9.61",
+  "description": "A jQuery plugin for creating wizards",
+  "keywords": [
+    "wizard",
+    "jquery",
+    "form",
+    "multistep"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/williamabbott/accordion-wizard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/williamabbott/accordion-wizard/issues"
+  },
+  "author": {
+    "name": "Will Abbott",
+    "email": "will@digitaloutback.co.uk",
+    "url": "https://github.com/williamabbott/accordion-wizard"
+  },
+  "homepage": "https://github.com/williamabbott/accordion-wizard",
+  "contributors": [
+    {
+      "name": "Will Abbott",
+      "email": "will@digitaloutback.co.uk",
+      "url": "https://github.com/williamabbott/accordion-wizard"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "browserify": "^16.2.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-buffer": "0.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1"
+  }
+}
