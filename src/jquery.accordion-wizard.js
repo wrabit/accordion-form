@@ -70,7 +70,7 @@
 						$content.append('<a href="#" class="'+mthis.settings.autoButtonsNextClass+'" data-acc-btn-next>Next</a>');
 					} else if( mthis.settings.autoButtonsShowSubmit ) {
 
-						var btnText = this.settings.mode == 'wizard' ? mthis.settings.autoButtonsSubmitText : mthis.settings.autoButtonsEditSubmitText;
+						var btnText = mthis.settings.mode == 'wizard' ? mthis.settings.autoButtonsSubmitText : mthis.settings.autoButtonsEditSubmitText;
 
 						$content.append('<input type="submit" class="' + mthis.settings.autoButtonsNextClass + '" value="' + btnText + '">');
 					}
