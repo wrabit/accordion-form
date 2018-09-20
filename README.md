@@ -1,6 +1,6 @@
 # Accordion Wizard
 
-A jQuery plugin that helps you create an accordian style wizard form.
+A jQuery plugin that helps you create an accordion style wizard form.
 
 [Usage](#usage) \
 [Event hooks](#event-hooks) \
@@ -26,7 +26,7 @@ Wizards tend to be less user friendly when updating existing data, for example w
 2. Include plugin's code:
 
 	```html
-	<script src="jquery.accordian-wizard.min.js"></script>
+	<script src="jquery.accordion-wizard.min.js"></script>
 	```
 
 3. Create markup:
@@ -125,7 +125,7 @@ Triggered upon form submission.
 ## External methods
 
 **activateNextStep** \
-```$('#element').data('plugin_accordian_wizard').activateNextStep()```
+```$('#element').data('plugin_accordion_wizard').activateNextStep()```
 
 Would you like any more hooks, functions or configuration options? Let me know.
 
