@@ -17,6 +17,11 @@ Wizards tend to be less user friendly when updating existing data, for example w
 
 ## Usage
 
+**npm**
+npm i accordion-wizard
+
+**Standard way**
+
 1. Include jQuery:
 
 	```html
@@ -132,3 +137,4 @@ Would you like any more hooks, functions or configuration options? Let me know.
 ## Demo
 
 [Demo](https://williamabbott.github.io/accordion-wizard)
+[Codepen](https://codepen.io/willabbott/pen/EerOdy)
