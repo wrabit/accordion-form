@@ -137,4 +137,3 @@ Would you like any more hooks, functions or configuration options? Let me know.
 ## Demo
 
 [Demo](https://wrabit.github.io/accordion-wizard)
-[Codepen](https://codepen.io/willabbott/pen/EerOdy)
