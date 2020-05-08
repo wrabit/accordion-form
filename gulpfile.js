@@ -3,7 +3,6 @@ var gulp = require( 'gulp' );
 var plumber = require( 'gulp-plumber' );
 var sass = require( 'gulp-sass' );
 var watch = require( 'gulp-watch' );
-// var util = require('gulp-util');
 var log = require('fancy-log');
 var beeper = require('beeper');
 var colors = require('ansi-colors');
@@ -23,8 +22,6 @@ var debug = require('gulp-debug');
 // Configuration file to keep your code DRY
 var cfg = require( './gulpconfig.json' );
 var paths = cfg.paths;
-
-//util.beep();
 
 // Run:
 // gulp sass
@@ -49,26 +46,6 @@ gulp.task( 'watch', function() {
     gulp.watch( [paths.src + '/*.js'], ['js'] );
 });
 
-// gulp.task( 'minifycss', function() {
-//     return gulp.src( [ paths.css + '/*.css', '!' + paths.css + '/*.min.*' ] )
-//         .pipe( plumber( {
-//                 errorHandler: function( err ) {
-//                     console.log( err ) ;
-//                     this.emit( 'end' );
-//                 }
-//             } ) )
-//         .pipe( debug() )
-//         .pipe( sourcemaps.init( { loadMaps: true } ) )
-//         .pipe( cleanCSS( { compatibility: '*' } ) )
-//         .pipe( rename( { suffix: '.min' } ) )
-//         .pipe( sourcemaps.write( './' ) )
-//         .pipe( gulp.dest( paths.css ) );
-// });
-
-// gulp.task( 'styles', function( callback ) {
-//     gulpSequence( 'sass', 'minifycss' )( callback );
-// });
-
 // Run:
 // gulp browser-sync
 // Starts browser-sync task for starting the server.
@@ -88,48 +65,16 @@ gulp.task( 'watch-bs', ['browser-sync', 'watch', 'js'], function() {});
 gulp.task( 'js', function() {
 
     return gulp.src(paths.src + '/*.js') // no need of reading file because browserify does.
-
         .pipe(plumber(errorHandler))
-
-        // .pipe(babel({
-        //     presets: [
-        //         ['es2015', { modules: false }]
-        //     ]
-        // }))
-
         // transform streaming contents into buffer contents (because gulp-sourcemaps does not support streaming contents)
         .pipe(buffer())
-
         .pipe( uglify() )
         .on('error', function (err) {
             log(colors.red('[Error]'), err.toString());
         })
-
         .pipe( rename( { suffix: '.min' } ) )
-
-        // load and init sourcemaps
-        // .pipe(sourcemaps.init({loadMaps: true}))
-        // // write sourcemaps
-        // .pipe(sourcemaps.write('./'))
-
         .pipe(gulp.dest( paths.dist ))
-
         .pipe( notify({message: 'JS task complete'}));
-
-    // var scripts = [
-    //     paths.dev + '/js/*.js'
-    // ];
-    // gulp.src( scripts )
-    //     .pipe( jsImport( { hideConsole: true } ) )
-    //     .pipe( rename( { suffix: '.min' } ) )
-    //     .pipe( babel({
-    //         presets: ['es2015-script'],
-    //         parserOpts: { sourceType: 'module' }
-    //     })
-    //     .on('error', function(err) { console.log(err) }) )
-    //     // .pipe( uglify() )
-    //     .pipe( gulp.dest( paths.js ));
-
 });
 
 // Deleting any file inside the /src folder

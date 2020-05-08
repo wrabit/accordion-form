@@ -1,31 +1,31 @@
 {
-  "name": "accordion-wizard",
-  "version": "0.9.67",
-  "description": "A jQuery plugin for creating wizards",
+  "name": "accordion-form",
+  "version": "1.0.0",
+  "description": "A jQuery plugin for creating accordion forms",
   "keywords": [
+    "accordion",
     "wizard",
-    "jquery",
-    "form",
-    "multistep"
+    "javascript",
+    "form"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/williamabbott/accordion-wizard.git"
+    "url": "https://github.com/wrabit/accordion-form.git"
   },
   "bugs": {
-    "url": "https://github.com/williamabbott/accordion-wizard/issues"
+    "url": "https://github.com/wrabit/accordion-form/issues"
   },
   "author": {
     "name": "Will Abbott",
     "email": "will@digitaloutback.co.uk",
-    "url": "https://github.com/williamabbott/accordion-wizard"
+    "url": "https://github.com/wrabit/accordion-form"
   },
-  "homepage": "https://github.com/williamabbott/accordion-wizard",
+  "homepage": "https://github.com/wrabit/accordion-form",
   "contributors": [
     {
       "name": "Will Abbott",
       "email": "will@digitaloutback.co.uk",
-      "url": "https://github.com/williamabbott/accordion-wizard"
+      "url": "https://github.com/wrabit/accordion-form"
     }
   ],
   "license": "MIT",
