@@ -3,7 +3,11 @@ var gulp = require( 'gulp' );
 var plumber = require( 'gulp-plumber' );
 var sass = require( 'gulp-sass' );
 var watch = require( 'gulp-watch' );
-var util = require('gulp-util');
+// var util = require('gulp-util');
+var log = require('fancy-log');
+var beeper = require('beeper');
+var colors = require('ansi-colors');
+
 var notify = require('gulp-notify');
 var rename = require( 'gulp-rename' );
 var uglify = require( 'gulp-uglify' );
@@ -97,7 +101,9 @@ gulp.task( 'js', function() {
         .pipe(buffer())
 
         .pipe( uglify() )
-        .on('error', function (err) { util.log(util.colors.red('[Error]'), err.toString()); })
+        .on('error', function (err) {
+            log(colors.red('[Error]'), err.toString());
+        })
 
         .pipe( rename( { suffix: '.min' } ) )
 
@@ -132,11 +138,11 @@ gulp.task( 'clean-source', function() {
 });
 
 function errorHandler(error) {
-    util.log(error);
+    log(error);
     console.log(error);
     // 3 beeps for error
-    util.beep();
-    util.beep();
-    util.beep();
+    beep();
+    beep();
+    beep();
     return true;
 }
