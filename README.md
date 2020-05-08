@@ -1,19 +1,19 @@
-# Accordion Wizard
+# accordionForm.js
 
-A jQuery plugin that helps you create an accordion style wizard form.
+A jQuery plugin that helps you create compact and usable accordion forms.
 
 [Usage](#usage) \
 [Event hooks](#event-hooks) \
 [External methods](#external-methods) \
 [Demo](#demo)
 
-#### Why a wizard?
+#### Why an accordion?
 
-Wizard forms help break down long forms to smaller chunks containing relatable questions. Autoscrolling enhances usability by scrolling the next step into view. Animation allows users to visually track where they went and where from.
+Accordions help break down long forms to smaller chunks containing relatable questions. Autoscrolling enhances usability by scrolling the next step into view. Animation allows users to visually track where they went and where from.
 
-#### When are wizards no good?
+#### When are accordion forms no good?
 
-Wizards tend to be less user friendly when updating existing data, for example when using as a CRUD form. This is because users have to first navigate through steps to find their field, edit and go through all steps to save again. For this reason I included an 'edit' mode which will load the form with all steps expanded.
+Accordion forms tend to be less user friendly when updating existing data, for example when using as a CRUD form. This is because users have to first navigate through steps to find their field, edit and go through all steps to save again. For this reason I included an 'edit' mode which will load the form with all steps expanded.
 
 ## Usage
 
