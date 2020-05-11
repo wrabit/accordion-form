@@ -78,7 +78,7 @@ npm i accordion-form
 3. Call the plugin:
 
 	```javascript
-	$("#element").accForm(options);
+	$("#element").accordionForm(options);
 	```
 
 ## Options
