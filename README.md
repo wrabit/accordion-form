@@ -18,7 +18,7 @@ Accordion forms tend to be less user friendly when updating existing data, for e
 ## Usage
 
 **npm**
-npm i accordion-wizard
+npm i accordion-form
 
 **Standard way**
 
@@ -31,7 +31,7 @@ npm i accordion-wizard
 2. Include plugin's code:
 
 	```html
-	<script src="jquery.accordion-wizard.min.js"></script>
+	<script src="jquery.accordion-form.min.js"></script>
 	```
 
 3. Create markup:
@@ -78,7 +78,7 @@ npm i accordion-wizard
 3. Call the plugin:
 
 	```javascript
-	$("#element").accWizard(options);
+	$("#element").accForm(options);
 	```
 
 ## Options
@@ -86,7 +86,7 @@ npm i accordion-wizard
 **start** (int, default 1) \
 The desired starting step
 
-**mode** (string, "wizard" || "edit", default "wizard") \
+**mode** (string, "accordian" || "edit", default "accordion") \
 Edit mode will automatically expand all steps and remove autoButtons, useful as a CRUD form editing existing data.
 
 **enableScrolling** - (bool, default true) \
@@ -130,10 +130,10 @@ Triggered upon form submission.
 ## External methods
 
 **activateNextStep** \
-```$('#element').data('plugin_accordion_wizard').activateNextStep()```
+```$('#element').data('plugin_accordion_form').activateNextStep()```
 
 Would you like any more hooks, functions or configuration options? Let me know.
 
 ## Demo
 
-[Demo](https://wrabit.github.io/accordion-wizard)
+[Demo](https://wrabit.github.io/accordion-form)
